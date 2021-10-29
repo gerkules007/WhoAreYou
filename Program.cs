@@ -35,7 +35,6 @@ int[] ProjectManager = { 4, 1, 1, 3, 3, 4, 3, 4, 5, 3, 5, 3, 5, 5, 4 };
 int[] ProductManager = { 3, 2, 3, 3, 3, 4, 2, 4, 4, 3, 5, 2, 4, 4, 3 };
 
 
-// Создаем функцию, которая будет обрабатывать введенные значения
 int count = NameQuetion.Length;
 int[] YourArray = new int[count];
 // Выделяем количество чисел из массива, повторяем операции, пока не достигнем конца массива
@@ -78,9 +77,10 @@ void Result(int[] Array, int[] DefaultArray, string Profession)
     Console.WriteLine($"Вы {Profession} на {SummRatio:F2}% ({Summ} из {SummDefault})");
 }
 Console.WriteLine();
+// Выводим введенные значения, чтобы скопировать
 for (int i = 0; i < YourArray.Length; i++) Console.WriteLine(NameQuetion[i] + " " + YourArray[i]);
 Console.WriteLine();
-//Считаем для каждой профессии
+// Считаем для каждой профессии
 Result(YourArray, Programmer, "Программист");
 Result(YourArray, Tester, "Тестировщик");
 Result(YourArray, Analytic, "Аналитик");
